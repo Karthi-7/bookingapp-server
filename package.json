@@ -6,9 +6,7 @@
   "scripts": {
     "start":"node server.js",
     "test": "npm start",
-    "watch": "ts-node-dev --respawn src/Union.ts",
-    "serve": "ts-node-dev src/function.ts",
-    "build": "tsc"
+   
   },
   "author": "",
   "license": "ISC",
