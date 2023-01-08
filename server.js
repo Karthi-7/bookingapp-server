@@ -1,8 +1,9 @@
 const express=require("express")
 const app=express()
 const dbConfig=require("./db")
+const cors=require("cors")
 var bodyParser = require('body-parser')
-const PORT=process.env.PORT || 5000
+const PORT= 5000
 
 //import routes
 const PropertyRoutes=require("./routes/property.routes")
@@ -12,6 +13,7 @@ const BookRoutes=require("./routes/booking.routes")
 
 
 // parse urlencode
+app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 // parse application/json
