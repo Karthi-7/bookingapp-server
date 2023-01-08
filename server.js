@@ -5,6 +5,7 @@ const cors=require("cors")
 var bodyParser = require('body-parser')
 const PORT= 5000
 
+app.use(cors())
 //import routes
 const PropertyRoutes=require("./routes/property.routes")
 const AuthRoutes=require("./routes/auth.routes")
@@ -13,7 +14,7 @@ const BookRoutes=require("./routes/booking.routes")
 
 
 // parse urlencode
-app.use(cors())
+
 app.use(bodyParser.urlencoded({ extended: false }))
 
 // parse application/json
