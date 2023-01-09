@@ -1,7 +1,8 @@
 const mongoose=require("mongoose")
 mongoose.set('strictQuery', true);
+require('dotenv').config()
 
-const mongodbUrl="mongodb+srv://cartrabbit:orbiz123@cluster0.qjqlgmr.mongodb.net/orbiz-rooms"
+const mongodbUrl=process.env.MONGODB_URL
 
 mongoose.connect(mongodbUrl,{useUnifiedTopology :true,useNewUrlParser:true})
 
