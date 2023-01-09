@@ -6,7 +6,7 @@ var bodyParser = require('body-parser')
 const PORT= 5000
 
 app.use(cors({
-    origin:"https://orbiz-rooms-client.onrender.com"
+    origin:"https://orbiz-roomz-derver.onrender.com"
 }))
 //import routes
 const PropertyRoutes=require("./routes/property.routes")
